@@ -31,7 +31,8 @@ public class SortingArray {
 
     private static void AscendingOrder(Integer[] num) {
         System.out.println("Ascending Order:  ");
-        showData(Arrays.sort(num,Collections.reverseOrder()));
+        Arrays.sort(num,Collections.reverseOrder());
+        showData(num);
     }//AscendingOrder
 
     private static void DescendingOrder(Integer[] num) {
