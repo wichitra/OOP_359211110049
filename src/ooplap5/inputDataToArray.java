@@ -6,7 +6,7 @@ package ooplap5;
 import java.util.Scanner;
 
 public class inputDataToArray {
-    private static int MAX = 5; // ประกาศตัวเเปร 5 ค่า
+    private static int MAX = 5; // ประกาศตัวเเปร 5 ค่า //1มิติ
     public static void main(String[] args) {
       Integer [] num = new Integer[MAX];
 //      int []num2 = new int[MAX];
