@@ -6,12 +6,12 @@ package ooplap7;
 // group;
 
     public class Student {
+        public static String faculty = "Management technology";
+
         private String id;
         private String name;
         private String major;
         private String group;
-
-
 
         //contructor
         //defalt

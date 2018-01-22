@@ -1,7 +1,7 @@
 package ooplap7;
 
 import com.sun.xml.internal.bind.v2.model.core.ID;
-
+import java.util.Scanner;
 public class StudentApp {
     public static void main(String[] args) {
         //creat object as Student
@@ -16,9 +16,36 @@ public class StudentApp {
                 "Maketing",
                 "MK221");
         showData(s1);
+        showData(s2);
+
+        Student s3 = new Student();
+//        s3 = inputData(s3);
+//        showData(s3);
+
+
+        //test
+
+//        System.out.println(Student.faculty);
+        System.out.println(s1.faculty);
+
+
 
 
     }  //main
+        private static Student inputData(Student s){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("please enter student info: ");
+        System.out.println("Enter student Id: ");
+        s.setId(scanner.nextLine());
+        System.out.println("Enter student name: ");
+        s.setName(scanner.nextLine());
+        System.out.println("Enter student major: ");
+        s.setMajor(scanner.nextLine());
+        System.out.println("Enter student group: ");
+        s.setGroup(scanner.nextLine());
+        return s;
+
+    }//inputdata
     private  static  void showData(Student s){
         System.out.println("Student info:  ");
         System.out.println("Id:  "+s.getId());
