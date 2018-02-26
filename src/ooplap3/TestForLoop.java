@@ -1,4 +1,4 @@
-package ooplap2.OOPLAP3;
+package ooplap3;
 
 public class TestForLoop {
     public static void main(String[] args) {

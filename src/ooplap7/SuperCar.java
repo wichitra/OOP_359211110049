@@ -1,68 +1,76 @@
 package ooplap7;
 
 public class SuperCar {
+    private String carBrand;
+    private String carColor;
+    private String engSize;
+    private String maxSpeed;
+    private String country;
 
-        private String  carbrand ;
-        private String carcolor;
-        private String carenginesize;
-        private String maxspeed;
-        private String countryoforigin;
-    //contructor
-    //defalt
+
+    //constructor คือ เมดธอดที่มีชื่อเดียวกันกับ class
     public SuperCar(){}
-    public SuperCar(String br, String cl, String s, String m,String r) {
-        this.carbrand = br;
-        this.carcolor = cl;
-        this.carenginesize = s;
-        this.maxspeed = m;
-        this.countryoforigin = r;
+    public SuperCar(String b,String c, String e, String m, String cr){
+        this.carBrand = b;
+        this.carColor = c;
+        this.engSize = e;
+        this.maxSpeed = m;
+        this.country = cr;
+    }
 
+    //getter and setter methods
+    // carColor
+    public String getCarColor() {
+        return carColor;
+    }
 
-    } //contructor
+    public void setCarColor(String carColor) {
+        this.carColor = carColor;
+    }
 
-    //getter and setter method
-    //id
-    //getter and setter method
-    //id
-    public void setCarbrand(String carbrand) {
-        this.carbrand = carbrand;
-    }//setcarbrand
+    // carBrand
+    public String getCarBrand() {
+        return carBrand;
+    }
 
-    public String getCarbrand() {
-        return this.carbrand;
-    }//getcarbrand
+    public void setCarBrand(String carBrand) {
+        this.carBrand = carBrand;
+    }
 
-    public void setCarcolor(String carcolor) {
-        this.carcolor = carcolor;
-    }//setcarcolor
+    // Engsize
+    public String getEngSize() {
+        return engSize;
+    }
 
-    public String getCarcolor() {
-        return this.carcolor;
-    }//getcarcolor
+    public void setEngSize(String engSize) {
+        this.engSize = engSize;
+    }
 
-    public void setCarenginesize(String carenginesize) {
-        this.carenginesize = carenginesize;
-    }//setcarenginesize
+    // max Speed
+    public String getMaxSpeed() {
+        return maxSpeed;
+    }
 
-    public String getCarenginesize() {
-        return this.carenginesize;
-    }//getcarenginesize
+    public void setMaxSpeed(String maxSpeed) {
+        this.maxSpeed = maxSpeed;
+    }
 
-    public void setMaxspeed(String group) {
-        this.maxspeed = maxspeed;
-    }//setmaxspeed
+    // country
+    public String getCountry() {
+        return country;
+    }
 
-    public String getMaxspeed() {
-        return this.maxspeed;
-    }//getmaxspeed
+    public void setCountry(String country) {
+        this.country = country;
+    }
 
-    public void setcountryoforigin(String countryoforigin) {
-        this.countryoforigin = countryoforigin;
-    }//setcountryoforigin
-
-    public String getcountryoforigin() {
-        return this.countryoforigin;
-    }//getcountryoforigin
-
-
-}//class
+    public String getSuperCarInfo() {
+        return "Super Car info {" +
+                "Car Brand ='" + carBrand + '\'' +
+                ",Car Colo='" + carColor + '\'' +
+                ", Engine Size='" + engSize + '\'' +
+                ", Max Speed='" + maxSpeed + '\'' +
+                ", country='" + country + '\'' +
+                '}';
+    }
+}
